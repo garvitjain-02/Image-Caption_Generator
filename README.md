@@ -1,8 +1,6 @@
 <h1> Neural Image Caption Generator </h1>
 
 <p align="center">
-<img src="https://img.shields.io/badge/made%20by%20-matakshay-blue">
-<img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103">
 <img src="https://img.shields.io/badge/contributions-welcome-brightgreen">
 <img src="https://img.shields.io/badge/python-v3.7%2B-orange" />
 <img src="https://img.shields.io/badge/tensorflow-2.1.0-yellow">
@@ -29,7 +27,9 @@ This is a Deep Learning Model for generating captions for images. It uses techni
     <li><a href="#acknowledgement"> Acknowledgement </a></li>
 </ol>
 
+<!--
 <h2 id="intro"> Introduction </h2>
+-->
 <p align="justify">
 Deep Learning and Neural Networks have found profound applications in both NLP and Computer Vision. Before the Deep Learning era, statistical and Machine Learning techniques were commonly used for these tasks, especially in NLP. Neural Networks however have now proven to be powerful techniques, especially for more complex tasks. With the increase in size of available datasets and efficient computational tools, Deep Learning is being throughly researched on and applied in an increasing number of areas.
 <br>
@@ -59,6 +59,7 @@ The strength of a ResNet lies in the use of Skip Connections - these mitigate th
 ResNet50 which is used in this project is a smaller version of the original ResNet152. This architecture is so frequently used for Transfer Learning that it comes preloaded in the Keras framework, along with the weights (trained on the ImageNet dataset). Since we only need this network for getting the image feature vectors, so we remove the last layer (which in the original model was used to classify input image into one of the 1000 classes). The encoded features for training and test images are stored at "encoded_train_features.pkl" and "encoded_test_features.pkl" respectively.
 </p>
 
+<!-- 
 <div align="center">
 	<figure>
 		<img src="model_plot.png"
@@ -67,6 +68,7 @@ ResNet50 which is used in this project is a smaller version of the original ResN
 		<figcaption> A plot of the architecture </figcaption>
 	</figure>
 </div>
+-->
 
 <p align="justify">
 <a href="https://nlp.stanford.edu/projects/glove/">GloVe</a> vectors were used for creating the word embeddings for the captions. The version used in this project contains 50-dimensional embedding vectors for 6 Billion English words. It can be downloaded from <a href="https://www.kaggle.com/watts2/glove6b50dtxt"> here</a>. These Embeddings are not processed (fine-tuned using the current data) further during training time. <br>
@@ -145,7 +147,7 @@ The trained model was used to generate caption for images from the test dataset.
         <li>
             Clone this repository on your system and head over to it
             <br>
-              <code> git clone https://github.com/matakshay/Neural_Image_Caption_Generator </code>
+              <code> git clone https://github.com/garvitjain-02/Image-Caption_Generator </code>
             <br>
             <code size> cd Neural_Image_Caption_Generator </code>
         </li>
@@ -165,6 +167,7 @@ The trained model was used to generate caption for images from the test dataset.
         </li>
     </ol>
 
+<!--
 <h2 id="acknowledgement">Acknowledgement</h2>
 <p align="justify">
     I referred many articles & research papers while working on this project. Some of them are listed below-
@@ -177,3 +180,5 @@ The trained model was used to generate caption for images from the test dataset.
         <li> https://towardsdatascience.com/understanding-and-coding-a-resnet-in-keras-446d7ff84d33 </li>
         <li> https://arxiv.org/abs/1512.03385 </li>
     </ul>
+
+    -->
